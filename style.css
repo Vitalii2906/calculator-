@@ -1,0 +1,20 @@
+div{
+	text-align: center;
+	margin-top: 10%;
+
+}
+form{
+	background-color: silver;
+	width: 400px;
+	margin: 0 auto;
+}
+[form=form]{
+	margin: 10px;
+}
+span{
+	font-size: 12px;
+
+}
+input{
+	line-height: 20px;
+}
