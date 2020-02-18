@@ -7,23 +7,32 @@
 	
 </head>
 <body>
-	<div>
-		<h1>TIP CALCULATOR</h1>
-		<form id="form">
-			<label for="account"></label>
-			<input id="account" type="text" name="money" form="form" placeholder="$"><br>
-			<select id="procent">
-				<option ><strong>--Choose an Option--</strong></option>
-				<option  value="5">5%</option>
-				<option  value="10">10%</option>
-				<option  value="15">15%</option>
-			</select><br>
+	<div class="container" >
 			
-			<input id="people" type="text" name="money" form="form" placeholder="people">
-			<label for="people"></label><br>
-			<button id="btn" type="button" form="form" >Calculate!</button>
-		</form>
-		<p id="score">Tip Amount:</p>
+			<h1>TIP CALCULATOR</h1>
+
+			<form id="form">
+				<p class="how-much">How much was your bill?</p>
+				<label for="account">$</label>
+				<input id="account" type="text" name="money" form="form" placeholder="100"><br>
+				<p>How was your service?</p>
+				<select id="procent">
+					<option class="choose" ><strong>--Choose an Option--</strong></option>
+					<option class="category" value="5"><strong>5% - It was Ok</strong></option>
+					<option class="category" value="10"><strong>10% - It was Ok</strong></option>
+					<option class="category" value="15"><strong>15% - It was Ok</strong></option>
+				</select><br>
+				<p>How many people are sharing the bill?</p>
+				<div class="people">	
+					<input id="people" type="text" name="money" form="form" placeholder="1">
+					<label for="people">people</label>
+				</div>
+				<button id="btn" type="button" form="form" >CALCULATE!</button>
+				<p id="score">Tip Amount<br><sup><small>$</small></sup><span id="bill"></span></p>
+				
+			</form>
+			
+			
 	</div>
 
 <script type="text/javascript" src="script.js"></script>
